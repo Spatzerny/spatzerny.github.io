@@ -12,6 +12,17 @@
 	}
 }
 
+@keyframes blink {
+	49% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(0.2);
+	}
+	51% {
+		transform: scaleY(1);
+	}
+}
 img {
 	position: absolute;
 }
@@ -30,6 +41,7 @@ img {
 	background-color: rgb(50,50,50);
 	position: absolute;
 	top: 230px;
+	animation: blink 4s infinite;
 }
 .eye.left {
 	left: 50px;
