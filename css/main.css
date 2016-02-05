@@ -1,12 +1,12 @@
 /* globals start */
 
 body {
+	background: url(../img/background.png) repeat-x;
 	color: rgb(50,50,50);
 	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
 }
-p, h1 {
-	font-family: sans-serif;
-}
+
 p {
 	font-size: 16px;
 	line-height: 24px;
@@ -18,6 +18,38 @@ h1 {
 
 /* globals end */
 
+/* fixed-nav start */
+
+.fixed-nav {
+	width: 100vw;
+	background: rgb(50,50,50);
+	position: fixed; /*duh*/
+	top: 0;
+	z-index: 1;
+}
+
+
+
+.fixed-nav li {
+	float: left;
+	border-right: 1px dashed rgb(70,70,70);
+	border-bottom: 1px dashed rgb(70,70,70);
+}
+
+.fixed-nav a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 14px 12px;
+}
+
+.fixed-nav a:hover {
+	background: rgb(60,60,60);
+}
+
+/* fixed-nav end */
+
 /* ninja start */
 
 img.ninja {
@@ -26,7 +58,7 @@ img.ninja {
 
 .ninja-container {
 	position: relative;
-	margin: 30px auto 80px auto;
+	margin: 50px auto 80px auto;
 	width: 455px;
 	height: 441px;
 }
